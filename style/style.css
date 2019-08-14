@@ -1,0 +1,137 @@
+body {
+    background-image: linear-gradient(to right, rgb(222,98,98),rgb(225,184,139));
+    color: rgb(225, 231, 224);
+    margin: 20px 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    font-size: 1.3rem;
+    margin: 0 50px;
+}
+
+.navbar {
+    flex: 1;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.navbar-item {
+    padding: 0 10px;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.active-tab{
+    text-decoration: underline;
+}
+
+
+.main-container {
+    text-align: center;
+}
+
+.container {
+    margin: 20px 0;
+    padding: 40px;
+}
+
+.grey-title {
+    color: rgb(64, 46, 41);
+}
+
+#main-page-left {
+    flex: 1;
+    margin: 0 100px;
+}
+
+#main-page-left p{
+    font-size: 1.5rem;
+}
+
+#main-page-right {
+    flex: 1;
+    text-align: center;
+}
+
+#main-page-image {
+    width: 250px;
+}
+
+button {
+    background-color: rgb(249, 69, 70);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+.people-image {
+    height: 300px;
+}
+
+.border {
+    border-top: 3px solid rgb(249, 69, 70);
+}
+
+.flexbox-3 {
+    flex: 3;
+    padding: 0 30px;
+}
+
+.flexbox-7 {
+    flex: 7;
+    padding: 0 30px;
+}
+
+.left{
+    order: 1;
+}
+
+.right {
+    order: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
