@@ -42,9 +42,10 @@ header {
 .container {
     margin: 20px 0;
     padding: 40px;
+    flex-wrap: wrap;
 }
 
-.grey-title {
+.gray-title {
     color: rgb(64, 46, 41);
 }
 
@@ -104,12 +105,88 @@ button {
     order: 2;
 }
 
+.container-block {
+    width: 33%;
+    height: 250px;
+    padding: 20px 0;
+}
 
+.container-block:nth-child(odd) {
+    background-color: rgb(64, 46, 41);
+}
 
+.container-block:nth-child(even) {
+    background-color: rgb(249, 69, 70);
+}
 
+.container-block img{
+    width: 300px;
+    margin: 0 0 20px 0;
+    border-radius: 20px;
+}
 
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgb(0,0,0,0.9);
+    text-align: center;
+}
 
+#modal-image {
+    width: 60%;
+}
 
+#modal-image, #modal-title, #modal-description, #modal-link{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    margin: 30px 300px;
+}
+
+#modal-content {
+    height: 500px;
+}
+
+#modal-title, #modal-link {
+    color: rgb(225, 231, 224);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+@-webkit-keyframes zoom{
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom{
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+#close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#close:hover, #close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Psychology</title>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <script src="script/script.js"></script>
+    </head>
+    <body>
+        <header class="flex">
+            <h3>STUFF</h3>
+            <ul class="navbar flex">
+                <li class="navbar-item"><a href="index.html">Home</a></li>
+                <li class="navbar-item"><a href="famous.html">Famous Figures</a></li>
+                <li class="navbar-item active-tab"><a href="mental.html">Mental Health</a></li>
+            </ul>
+            </h2>
+        </header>
+        <div class="main-container">
+            <h1 class="title">Mental <span class="gray-title">Illness</span></h1>
+            
+            <div class="container flex">
+                
+                <div class="container-block" onclick="showModal(this)"> 
+                    <img src="images/neurodevelopmental.jpg" alt="Neurodevelopmental disorders are a group of disorders in which the development of the central nervous system is disturbed. This can include developmental brain dysfunction, which can manifest as neuropsychiatric problems or impaired motor function, learning, language or non-verbal communication.">
+                    <div class="diorder-name">Neurodevelopmental Disorders</div>
+                    <a href="https://www.nature.com/subjects/neurodevelopmental-disorders"></a>
+                </div>
+
+                <div class="container-block" onclick="showModal(this)">
+                    <img src="images/bipolar.jpg" alt="Bipolar disorder is a mental illness that causes dramatic shifts in a person’s mood, energy and ability to think clearly. People with bipolar experience high and low moods—known as mania and depression—which differ from the typical ups-and-downs most people experience.">
+                    <div class="diorder-name">Bipolar Disorders</div>
+                    <a href="https://www.nami.org/learn-more/mental-health-conditions/bipolar-disorder"></a>
+                </div>
+
+                <div class="container-block" onclick="showModal(this)">
+                    <img src="images/anxiety.jpg" alt="Everyone feels anxious now and then. It’s a normal emotion. For example, you may feel nervous when faced with a problem at work, before taking a test, or before making an important decision. Anxiety disorders are different, though. They are a group of mental illnesses, and the distress they cause can keep you from carrying on with your life normally. For people who have one, worry and fear are constant and overwhelming, and can be disabling. But with treatment, many people can manage those feelings and get back to a fulfilling life.">
+                    <div class="diorder-name">Anxiety Disorders</div>
+                    <a href="https://www.webmd.com/anxiety-panic/guide/anxiety-disorders#1"></a>
+                </div>
+
+                <div class="container-block" onclick="showModal(this)">
+                    <img src="images/trauma.jpg" alt="Trauma- and stressor-related disorders involve exposure to a traumatic or stressful event. Two of the trauma-related disorders are acute stress disorder (ASD) and posttraumatic stress disorder (PTSD). ASD and PTSD are similar except that ASD typically begins immediately after the trauma and lasts from 3 days to 1 mo, whereas PTSD lasts for more than 1 mo, either as a continuation of ASD or as a separate occurrence that begins up to 6 mo after the trauma. Previously, trauma- and stressor-related disorders were considered anxiety disorders. However, they are now considered distinct because many patients do not have anxiety but instead have symptoms of anhedonia or dysphoria, anger, aggression, or dissociation.">
+                    <div class="diorder-name">Trauma and Stressor-related Disorders</div>
+                    <a href="https://www.msdmanuals.com/professional/psychiatric-disorders/anxiety-and-stressor-related-disorders/overview-of-trauma-and-stressor-related-disorders"></a>
+                </div>
+
+                <div class="container-block" onclick="showModal(this)">
+                    <img src="images/dissociative.jpeg" alt="Dissociative disorders are mental disorders that involve experiencing a disconnection and lack of continuity between thoughts, memories, surroundings, actions and identity. People with dissociative disorders escape reality in ways that are involuntary and unhealthy and cause problems with functioning in everyday life.">
+                    <div class="diorder-name">Dissociative Disorders</div>
+                    <a href="https://www.mayoclinic.org/diseases-conditions/dissociative-disorders/symptoms-causes/syc-20355215"></a>
+                </div>
+
+                <div class="container-block" onclick="showModal(this)">
+                    <img src="images/somatic.png" alt="Somatic symptom and related disorders is the name for a group of conditions in which the physical pain and symptoms a person feels are related to psychological factors. These symptoms can’t be traced to a specific physical cause. In people who have a somatic symptom and related disorders, medical test results are either normal or don’t explain the person’s symptoms. People who have this disorder may have several medical evaluations and tests to be sure that they don’t have another illness. They often become very worried about their health because they don’t know what’s causing their health problems. Their symptoms are similar to the symptoms of other illnesses and may last for several years. People who have a somatoform disorder are not faking their symptoms. The pain that they feel is real.">
+                    <div class="diorder-name">Somatic Symptom and Related Disorders</div>
+                    <a href="https://familydoctor.org/condition/somatic-symptom-and-related-disorders/"></a>
+                </div>
+
+            </div>
+        </div>
+        <div id="modal">
+            <span id="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image">
+            <div id="modal-content">
+                <div id="modal-title"></div>
+                <div id="modal-description"></div>
+                <a id="modal-link" href="#" target="_blank">Know More</a>
+            </div>
+        </div>
+    </body>
+</html>
